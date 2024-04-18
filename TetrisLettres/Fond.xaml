@@ -1,0 +1,23 @@
+﻿<Page x:Class="TetrisLettres.Fond"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TetrisLettres"
+      mc:Ignorable="d" 
+      d:DesignWidth="{x:Static SystemParameters.PrimaryScreenWidth}"   d:DesignHeight="{x:Static SystemParameters.PrimaryScreenHeight}"
+      Title="Fond">
+
+    <Rectangle
+    Name="MainAffichage"
+               Width="{x:Static SystemParameters.PrimaryScreenWidth}"   Height="{x:Static SystemParameters.PrimaryScreenHeight}"
+                                                                                            HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Rectangle.Fill>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="Cyan" Offset="0.01" />
+            <GradientStop Color="Blue" Offset="0.5" />
+            <GradientStop Color="DarkBlue" Offset="1.0" />
+        </LinearGradientBrush>
+        </Rectangle.Fill>
+    </Rectangle>
+</Page>

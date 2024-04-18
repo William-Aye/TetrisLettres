@@ -1,0 +1,27 @@
+﻿<Page x:Class="TetrisLettres.Affichage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TetrisLettres"
+      mc:Ignorable="d"
+      Width="{x:Static SystemParameters.PrimaryScreenWidth}"  
+      Height="{x:Static SystemParameters.PrimaryScreenHeight}"  
+      Background="Transparent"
+      Title="Affichage">
+
+    <Canvas Name="stackPanelOption">
+        <Frame Name="MainAffichage"
+               Width="{x:Static SystemParameters.PrimaryScreenWidth}"   Height="{x:Static SystemParameters.PrimaryScreenHeight}"
+                                                                                            HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Frame Name="GrilleAffichage"
+               Width="{x:Static SystemParameters.PrimaryScreenHeight}"  Height="{x:Static SystemParameters.PrimaryScreenHeight}"
+                                                                 Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="336"/>
+        <Frame Name="ChronoAffichage"   Width="200" Height="400" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="63" Canvas.Top="71"/>
+        <Frame Name="MotDevine"         Width="200" Height="100" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="1277" Canvas.Top="705"/>
+        <Frame Name="ScoreAffichage"    Width="250" Height="600" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="1245" Canvas.Top="43"/>
+        <Frame Name="FinAffichage"
+               Width="{x:Static SystemParameters.PrimaryScreenHeight}"  Height="{x:Static SystemParameters.PrimaryScreenHeight}"
+                                                                                            HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Canvas>
+</Page>
